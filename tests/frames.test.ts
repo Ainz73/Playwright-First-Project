@@ -7,8 +7,8 @@ test ("interact with frames", async ({ page}) => {
     console.log( "No.of frames: " + allframes.length);
 
     const frame = page.frameLocator("#firstFr")
-    await frame.locator("input[name='fname']").fill ("Aeiz")
-    await frame.locator("input[name='lname']").fill ("Fabio")
+    await frame.locator("input[name='fname']").fill ("Julio")
+    await frame.locator("input[name='lname']").fill ("Italo")
 
     const innerframe = frame.frameLocator("iframe[src='innerFrame']")
     await innerframe.locator("input[name='email']").fill("ainz_72@outlook.com")
